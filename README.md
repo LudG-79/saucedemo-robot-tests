@@ -1,8 +1,8 @@
 ## 🤖 SauceDemo — Automatisation de tests
 
-![Robot Framework](https://img.shields.io/badge/Robot%20Framework-6.x-blue)
-![Python](https://img.shields.io/badge/Python-3.x-green)
-![SeleniumLibrary](https://img.shields.io/badge/SeleniumLibrary-6.x-orange)
+![Robot Framework](https://img.shields.io/badge/Robot%20Framework-7.4-blue)
+![Python](https://img.shields.io/badge/Python-3.14-green)
+![SeleniumLibrary](https://img.shields.io/badge/SeleniumLibrary-4.41.0-orange)
 ![Status](https://img.shields.io/badge/Tests-Passing-brightgreen)
 
 Suite de tests automatisés sur le site SauceDemo
@@ -22,7 +22,7 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 ---
  🛠️ Technologies
 
-- **Language** : Python 3.13
+- **Language** : Python 3.14
 - **Framework** : Robot Framework
 - **Library** : SeleniumLibrary
 - **Browser** : Chrome
