@@ -15,14 +15,14 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 
 | Module | Tests | Status |
 |--------|-------|--------|
-| Login | 4 tests (positif + négatif) | ✅ Passing |
+| Login | 5 tests (positif + négatif) | ✅ Passing |
 | Cart | En cours | 🔄 WIP |
 | Checkout | En cours | 🔄 WIP |
 
 ---
  🛠️ Technologies
 
-- **Language** : Python 3.x
+- **Language** : Python 3.13
 - **Framework** : Robot Framework
 - **Library** : SeleniumLibrary
 - **Browser** : Chrome
@@ -33,13 +33,13 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 ```
 saucedemo-robot-tests/
 ├── pages/                  → Fichiers page object
-│   ├── login_page.robot
-│   ├── inventory_page.robot
-│   └── cart_page.robot
+│   ├── connexion_utilisateurs.robot
+│   ├── ajout_produit_panier.robot
+│   └── achat_produit.robot
 ├── tests/                  →Scénario de tests
-│   ├── login_tests.robot
-│   ├── cart_tests.robot
-│   └── checkout_tests.robot
+│   ├── connexion_utilisateur_tests.robot
+│   ├── ajout_produit_panier_tests.robot
+│   └── achat_produit_tests.robot
 ├── results/                → Rapports auto-générés (ignorés par GIT)
 ├── .gitignore
 └── README.md
@@ -50,8 +50,9 @@ saucedemo-robot-tests/
  
 ## Pré recquis
 
-bash
-pip install robotframework
+bash :
+pip install robotframework 
+/ 
 pip install robotframework-seleniumlibrary
 
 Lancer tous les tests : 
@@ -61,7 +62,7 @@ python -m robot -d results tests/
 
 Lancer un fichier spécifique : 
 bash :
-python -m robot -d results tests/login_tests.robot
+python -m robot -d results tests/connexion_utilisateurs_tests.robot
 
 
 Lancer les tests en vitesse lente :
@@ -109,7 +110,7 @@ python -m robot -d results -e negatif tests/
 
 ---
 
-*Conçu avec ❤️ dans le cadre d'un apprentissage autodidacte de l'automatisation des tests avec l'aide de Claude (IA)*
+*Conçu avec ❤️ dans le cadre d'un apprentissage autodidacte de l'automatisation des tests*
 
 ---
 
