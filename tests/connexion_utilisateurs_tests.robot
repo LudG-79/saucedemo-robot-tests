@@ -11,7 +11,7 @@ TC01 - Connexion avec identifiants valides
     Ouvrir SauceDemo
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
-    La page inventaire doit être affichée
+    La page produit doit être affichée
 
 TC02 - Connexion avec un mauvais mot de passe
     [Documentation]    Un message d'erreur s'affiche si le mot de passe est incorrect

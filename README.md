@@ -128,3 +128,16 @@ Repository name : saucedemo-robot-tests
 Description     : Suite de tests automatisés sur le site SauceDemo avec RobotFramework
 Visibility      : ✅ Public 
 README          : ❌ Ne pas cocher (fichier existant)
+
+---
+
+Étape 3 - MAJ au fur et à mesure de l'apprentissage
+
+1. Voir ce qui a changé
+git status
+2. Ajouter les modifications
+git add .
+3. Committer avec un message clair
+git commit -m "feat: ... "
+4. Envoyer sur GitHub
+git push

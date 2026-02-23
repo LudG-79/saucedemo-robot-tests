@@ -8,7 +8,7 @@ ${USERNAME-INPUT}        id=user-name
 ${PASSWORD_INPUT}        id=password
 ${LOGIN-BUTTON}          id=login-button
 ${ERROR-MESSAGE}         css=.error-message-container
-${INVENTORY_URL}         inventory
+${URL_PRODUITS}          inventory
 ${VITESSE}               2s
 
 *** Keywords ***
@@ -28,8 +28,8 @@ Saisir les identifiants
 Cliquer sur Login
     Click Button  ${LOGIN-BUTTON}
 
-La page inventaire doit être affichée
-    Location Should Contain    ${INVENTORY_URL}
+La page produit doit être affichée
+    Location Should Contain    ${URL_PRODUITS}
     Page Should Contain        Products
 
 Un message d'erreur doit être affiché

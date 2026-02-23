@@ -10,7 +10,7 @@ ${LOGIN_BUTTON}          id=login-button
 ${TEESHIRT_ADDTOCART}    id=add-to-cart-sauce-labs-bolt-t-shirt
 ${PANIER_BUTTON}         xpath=//span[@class='shopping_cart_badge']
 ${ERROR_MESSAGE}         css=.error-message-container
-${INVENTORY_URL}         inventory
+${URL_PRODUITS}          inventory
 ${VITESSE}               2s
 
 *** Keywords ***
