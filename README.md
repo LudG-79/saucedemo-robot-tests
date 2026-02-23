@@ -1,4 +1,4 @@
- 🤖 SauceDemo — Automatisation de tests
+## 🤖 SauceDemo — Automatisation de tests
 
 ![Robot Framework](https://img.shields.io/badge/Robot%20Framework-6.x-blue)
 ![Python](https://img.shields.io/badge/Python-3.x-green)
@@ -48,32 +48,33 @@ saucedemo-robot-tests/
 ---
  🚀 Comment
  
- Pré recquis
+## Pré recquis
+
 bash
 pip install robotframework
 pip install robotframework-seleniumlibrary
 
-Lancer tous les tests
-bash
+Lancer tous les tests : 
+bash :
 python -m robot -d results tests/
 
 
-Lancer un fichier spécifique
-bash
+Lancer un fichier spécifique : 
+bash :
 python -m robot -d results tests/login_tests.robot
 
 
-Lancer les tests en vitesse lente
-bash
+Lancer les tests en vitesse lente :
+bash :
 python -m robot -d results -v VITESSE:1s tests/
 
 
-Lancer un test avec un tag
-bash
-Seulement smoke test
+Lancer un test avec un tag :
+bash :
+Seulement smoke test : 
 python -m robot -d results -i smoke tests/
 
-Exclure les tests négatifs
+Exclure les tests négatifs : 
 python -m robot -d results -e negatif tests/
 
 ---
@@ -109,6 +110,7 @@ python -m robot -d results -e negatif tests/
 ---
 
 *Conçu avec ❤️ dans le cadre d'un apprentissage autodidacte de l'automatisation des tests avec l'aide de Claude (IA)*
+
 ---
 
  📤 Mettre sur GitHub
@@ -119,10 +121,9 @@ python -m robot -d results -e negatif tests/
 
 Étape 2 — Créer le repository sur GitHub
 
-1. Clique sur le **+** en haut à droite → **New repository**
-2. Remplir comme ça :
-
+1. Cliquer sur le **+** en haut à droite → **New repository**
+2. Compléter :
 Repository name : saucedemo-robot-tests
-Description     : Automated test suite for SauceDemo using Robot Framework
-Visibility      : ✅ Public (important pour le portfolio !)
+Description     : Suite de tests automatisés sur le site SauceDemo avec RobotFramework
+Visibility      : ✅ Public 
 README          : ❌ Ne pas cocher (fichier existant)
