@@ -1,0 +1,14 @@
+# Rapports générés automatiquement
+results/
+
+# Fichiers Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
