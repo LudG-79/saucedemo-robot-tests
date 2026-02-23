@@ -1,6 +1,6 @@
 *** Settings ***
 Library          SeleniumLibrary
-Resource         ../pages/achat_produit.robot
+Resource         ../pages/page_produit.robot
 Test Teardown    Fermer le navigateur
 
 *** Test Cases ***
