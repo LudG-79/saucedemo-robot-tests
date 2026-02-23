@@ -1,18 +1,17 @@
-# 🤖 SauceDemo — Automated Test Suite
+ 🤖 SauceDemo — Automatisation de tests
 
 ![Robot Framework](https://img.shields.io/badge/Robot%20Framework-6.x-blue)
 ![Python](https://img.shields.io/badge/Python-3.x-green)
 ![SeleniumLibrary](https://img.shields.io/badge/SeleniumLibrary-6.x-orange)
 ![Status](https://img.shields.io/badge/Tests-Passing-brightgreen)
 
-Automated test suite for [SauceDemo](https://www.saucedemo.com),  
-a demo e-commerce application used to practice test automation.
+Suite de tests automatisés sur le site SauceDemo
+une application e-commerce de démonstration utilisée pour s'exercer à l'automatisation des tests.
 
-Built as part of a self-taught journey into test automation.
+Développée dans le cadre d'un apprentissage autodidacte de l'automatisation des tests.
 
 ---
-
-## 📋 Test Coverage
+ 📋 Couverture de tests
 
 | Module | Tests | Status |
 |--------|-------|--------|
@@ -21,8 +20,7 @@ Built as part of a self-taught journey into test automation.
 | Checkout | En cours | 🔄 WIP |
 
 ---
-
-## 🛠️ Tech Stack
+ 🛠️ Technologies
 
 - **Language** : Python 3.x
 - **Framework** : Robot Framework
@@ -31,60 +29,56 @@ Built as part of a self-taught journey into test automation.
 - **IDE** : Visual Studio Code
 
 ---
-
-## 📁 Project Structure
+ 📁 Structure du projet
 ```
 saucedemo-robot-tests/
-├── pages/                  → Page Object keywords
+├── pages/                  → Fichiers page object
 │   ├── login_page.robot
 │   ├── inventory_page.robot
 │   └── cart_page.robot
-├── tests/                  → Test scenarios
+├── tests/                  →Scénario de tests
 │   ├── login_tests.robot
 │   ├── cart_tests.robot
 │   └── checkout_tests.robot
-├── results/                → Generated reports (gitignored)
+├── results/                → Rapports auto-générés (ignorés par GIT)
 ├── .gitignore
 └── README.md
 ```
 
 ---
-
-## 🚀 How to Run
-
-### Prerequisites
-```bash
+ 🚀 Comment
+ 
+ Pré recquis
+bash
 pip install robotframework
 pip install robotframework-seleniumlibrary
-```
 
-### Run all tests
-```bash
+Lancer tous les tests
+bash
 python -m robot -d results tests/
-```
 
-### Run a specific file
-```bash
+
+Lancer un fichier spécifique
+bash
 python -m robot -d results tests/login_tests.robot
-```
 
-### Run in slow mode (to observe)
-```bash
+
+Lancer les tests en vitesse lente
+bash
 python -m robot -d results -v VITESSE:1s tests/
-```
 
-### Run by tag
-```bash
-# Only smoke tests
+
+Lancer un test avec un tag
+bash
+Seulement smoke test
 python -m robot -d results -i smoke tests/
 
-# Exclude negative tests
+Exclure les tests négatifs
 python -m robot -d results -e negatif tests/
-```
 
 ---
 
-## 🧪 Test Users (SauceDemo)
+🧪 Test utilisateurs     
 
 | Username | Password | Description |
 |----------|----------|-------------|
@@ -95,43 +89,40 @@ python -m robot -d results -e negatif tests/
 
 ---
 
-## 📚 What I Learned
+📚 Ce que j'ai appris
 
-- Page Object Model pattern
-- Keyword-driven testing approach
-- Positive and negative test scenarios
-- Robot Framework syntax and structure
-- SeleniumLibrary for browser automation
+- Modèle Page Object
+- Approche de test pilotée par mots-clés
+- Scénarios de tests positifs et négatifs
+- Syntaxe et structure de Robot Framework
+- Bibliothèque Selenium pour l'automatisation du navigateur
+---
+
+ 🗓️ Feuille de route
+
+- [x] Tests de connexion
+- [ ] Tests du panier d'achat
+- [ ] Tests du processus de paiement
+- [ ] Tests pilotés par les données
+- [ ] Intégration continue et déploiement continu (CI/CD) avec GitHub Actions
 
 ---
 
-## 🗓️ Roadmap
+*Conçu avec ❤️ dans le cadre d'un apprentissage autodidacte de l'automatisation des tests avec l'aide de Claude (IA)*
+---
 
-- [x] Login tests
-- [ ] Shopping cart tests
-- [ ] Checkout flow tests
-- [ ] Data-driven tests
-- [ ] CI/CD with GitHub Actions
+ 📤 Mettre sur GitHub
+
+Étape 1 — Connexion sur GitHub
 
 ---
 
-*Built with ❤️ as part of a self-taught test automation journey*
-```
-
----
-
-## 📤 Mettre sur GitHub
-
-### Étape 1 — Connexion sur GitHub
-
----
-
-### Étape 2 — Créer le repository sur GitHub
+Étape 2 — Créer le repository sur GitHub
 
 1. Clique sur le **+** en haut à droite → **New repository**
-2. Remplis comme ça :
-```
+2. Remplir comme ça :
+
 Repository name : saucedemo-robot-tests
 Description     : Automated test suite for SauceDemo using Robot Framework
 Visibility      : ✅ Public (important pour le portfolio !)
-README          : ❌ Ne pas cocher (on a déjà le nôtre)
+README          : ❌ Ne pas cocher (fichier existant)
