@@ -59,6 +59,8 @@ Lancer tous les tests :
 bash :
 python -m robot -d results tests/
 
+Lancer un test précis : 
+python -m robot -d results -t "TC07 - Supprimer depuis la page produits - badge disparaît" tests/panier_tests.robot
 
 Lancer un fichier spécifique : 
 bash :
