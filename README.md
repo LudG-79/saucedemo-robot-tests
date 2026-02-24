@@ -20,7 +20,7 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 | Checkout | En cours | 🔄 WIP |
 
 ---
- 🛠️ Technologies
+ 🛠️ Technologies utilisées
 
 - **Language** : Python 3.14
 - **Framework** : Robot Framework
@@ -34,12 +34,12 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 saucedemo-robot-tests/
 ├── pages/                  → Fichiers page object
 │   ├── connexion_utilisateurs.robot
-│   ├── ajout_produit_panier.robot
-│   └── achat_produit.robot
+│   ├── page_produits.robot
+│   └── page_panier.robot
 ├── tests/                  →Scénario de tests
-│   ├── connexion_utilisateur_tests.robot
-│   ├── ajout_produit_panier_tests.robot
-│   └── achat_produit_tests.robot
+│   ├── connexion_utilisateurs_tests.robot
+│   ├── panier_tests.robot
+│   └── paiment_tests.robot
 ├── results/                → Rapports auto-générés (ignorés par GIT)
 ├── .gitignore
 └── README.md
@@ -82,7 +82,7 @@ python -m robot -d results -e negatif tests/
 
 🧪 Test utilisateurs     
 
-| Username | Password | Description |
+| Nom d'utilisateur | Mot de passe | Description |
 |----------|----------|-------------|
 | standard_user | secret_sauce | Utilisateur normal |
 | locked_out_user | secret_sauce | Compte bloqué |
