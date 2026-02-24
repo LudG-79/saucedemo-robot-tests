@@ -7,7 +7,7 @@ Test Teardown    Fermer le navigateur
 *** Test Cases ***
 TC05 - Ajout 1 article - badge du panier affiche 1
     [Documentation]    Un utilisateur standard peut se connecter et ajouter un produit dans le panier
-    [Tags]             login    smoke    positif
+    [Tags]             produit
     Ouvrir SauceDemo 
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
@@ -17,7 +17,7 @@ TC05 - Ajout 1 article - badge du panier affiche 1
 
 TC06 - Ajouter 2 articles - badge du panier affiche 2
     [Documentation]    Un utilisateur standard se connecte et ajouter deux produits dans le panier
-    [Tags]        login    smoke    positif
+    [Tags]        produit
     Ouvrir SauceDemo
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
@@ -27,7 +27,7 @@ TC06 - Ajouter 2 articles - badge du panier affiche 2
 
 TC07 - Supprimer depuis la page produits - badge disparaît
     [Documentation]    Un utilisateur standard se connecte, ajoute 1 produit et supprime le produit
-    [Tags]        login    smoke    positif
+    [Tags]        produit
     Ouvrir SauceDemo
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
@@ -37,7 +37,7 @@ TC07 - Supprimer depuis la page produits - badge disparaît
 
 TC08 - Accéder au panier - article bien présent
     [Documentation]   Un utilisateur standard se connecte, ajoute 1 produit et vérifie dans le panier
-    [Tags]            login    smoke    positif
+    [Tags]            panier
     Ouvrir SauceDemo
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
@@ -48,7 +48,7 @@ TC08 - Accéder au panier - article bien présent
 
 TC09 - Supprimer depuis le panier - panier vide
     [Documentation]     Un utilisateur standard se connecte, ajoute et supprime un article dans le panier
-    [Tags]    login    smoke    positif
+    [Tags]    panier
     Ouvrir SauceDemo
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
@@ -60,7 +60,7 @@ TC09 - Supprimer depuis le panier - panier vide
 
 TC10 - Continuer ses achats - retour page produits
     [Documentation]     Un utilisateur standard se connecte, ajoute un article, vérifie son panier et continue son shopping
-    [Tags]    login    smoke    positif
+    [Tags]    retour
     Ouvrir SauceDemo
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
