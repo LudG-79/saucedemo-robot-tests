@@ -13,11 +13,11 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 ---
  📋 Couverture de tests
 
-| Module | Tests | Status |
+| Module | Tests | Statut |
 |--------|-------|--------|
-| Login | 5 tests (positif + négatif) | ✅ Passing |
-| Cart | En cours | 🔄 WIP |
-| Checkout | En cours | 🔄 WIP |
+| Connexion | 5 tests (positif + négatif) | ✅ Passing |
+| Achat | En cours | 🔄 WIP |
+| Paiement | En cours | 🔄 WIP |
 
 ---
  🛠️ Technologies utilisées
@@ -40,7 +40,7 @@ saucedemo-robot-tests/
 │   ├── connexion_utilisateurs_tests.robot
 │   ├── panier_tests.robot
 │   └── paiment_tests.robot
-├── results/                → Rapports auto-générés (ignorés par GIT)
+├── resultats/              → Rapports auto-générés (ignorés par GIT)
 ├── .gitignore
 └── README.md
 ```
