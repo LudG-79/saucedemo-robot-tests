@@ -32,6 +32,8 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
  📁 Structure du projet
 ```
 saucedemo-robot-tests/
+├── resources/
+│   └── variables.robot     → Fichiers avex les variables
 ├── pages/                  → Fichiers page object
 │   ├── connexion_utilisateurs.robot
 │   ├── page_produits.robot

@@ -1,6 +1,7 @@
 *** Settings ***
 Library          SeleniumLibrary
 Resource         ../pages/page_produits.robot
+Resource         ../Ressources/variables.robot
 Test Teardown    Fermer le navigateur
 
 *** Test Cases ***
@@ -11,6 +12,7 @@ TC05 - Ajout 1 article - badge du panier affiche 1
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
     Ajouter 1 produit
+    Element Should Contain    ${PANIER_BUTTON}    1
     Fermer le navigateur
 
 TC06 - Ajouter 2 articles - badge du panier affiche 2
@@ -20,6 +22,7 @@ TC06 - Ajouter 2 articles - badge du panier affiche 2
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
     Ajouter 2 produits
+    Element Should Contain    ${PANIER_BUTTON}    2
     Fermer le navigateur
 
 TC07 - Supprimer depuis la page produits - badge disparaît
@@ -29,6 +32,7 @@ TC07 - Supprimer depuis la page produits - badge disparaît
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
     Supprimer le produit depuis la page produit
+    Element Should Not Be Visible    ${PANIER_BUTTON}    0
     Fermer le navigateur
 
 TC08 - Accéder au panier - article bien présent
@@ -38,8 +42,30 @@ TC08 - Accéder au panier - article bien présent
     Saisir les identifiants    standard_user    secret_sauce
     Cliquer sur Login
     Ajouter 1 produit
-    Accéder au panier - article bien présent
+    Accéder au panier
+    Page Should Contain    Sauce Labs Bolt T-Shirt
     Fermer le navigateur
 
-###TC09 - Supprimer depuis le panier - panier vide
-###TC10 - Continuer ses achats - retour page produits
+TC09 - Supprimer depuis le panier - panier vide
+    [Documentation]     Un utilisateur standard se connecte, ajoute et supprime un article dans le panier
+    [Tags]    login    smoke    positif
+    Ouvrir SauceDemo
+    Saisir les identifiants    standard_user    secret_sauce
+    Cliquer sur Login
+    Ajouter 1 produit    
+    Accéder au panier
+    Supprimer 1 produit depuis le panier
+    Element Should Not Be Visible    ${PANIER_BUTTON}
+    Fermer le navigateur
+
+TC10 - Continuer ses achats - retour page produits
+    [Documentation]     Un utilisateur standard se connecte, ajoute un article, vérifie son panier et continue son shopping
+    [Tags]    login    smoke    positif
+    Ouvrir SauceDemo
+    Saisir les identifiants    standard_user    secret_sauce
+    Cliquer sur Login
+    Ajouter 1 produit    
+    Accéder au panier
+    Continuer ses achats - retour page produit
+    Page Should Contain    Products
+    Fermer le navigateur
