@@ -25,9 +25,31 @@ TC11 - Parcours complet de A a Z — confirmation affichee
     Cliquer sur finish
     Page Should Contain    Thank you for your order!
     Fermer le navigateur
+TC12 - Soumettre formulaire vide — message erreur
+    [Documentation]     Un utilisateur soumet le formulaire vide
+    [Tags]     negatif
+    Se connecter et préparer le panier
+    Cliquer sur Checkout
+    Cliquer sur continue
+    Element Should Be Visible    ${ERROR_MESSAGE}
+    Fermer le navigateur
 
+TC13 - Soumettre sans prenom — message erreur
+    [Documentation]    Un utilisateur standard soumet le formulaire sans prénom
+    [Tags]    negatif
+    Se connecter et préparer le panier
+    Cliquer sur Checkout
+    Saisir le Formulaire    firstname=   Lastname=Doe    zippostalcode=44000
+    Cliquer sur continue
+    Page Should Contain    text=Error: First Name is required
+    Fermer le navigateur
 
-
-###TC12 - Soumettre formulaire vide — message erreur
-###TC13 - Soumettre sans prenom — message erreur
-###TC14 - Soumettre sans code postal — message erreur
+TC14 - Soumettre sans code postal — message erreur
+    [Documentation]    Un utilisateur standard soumet le formulaire sans code postal
+    [Tags]    negatif
+    Se connecter et préparer le panier
+    Cliquer sur Checkout
+    Saisir le Formulaire    firstname=John   Lastname=Doe    zippostalcode=
+    Cliquer sur continue
+    Page Should Contain    text=Error: Postal Code is required
+    Fermer le navigateur
