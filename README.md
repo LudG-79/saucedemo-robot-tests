@@ -41,7 +41,7 @@ saucedemo-robot-tests/
 ├── tests/                  →Scénario de tests
 │   ├── connexion_utilisateurs_tests.robot
 │   ├── panier_tests.robot
-│   └── paiment_tests.robot
+│   └── paiement_tests.robot
 ├── resultats/              → Rapports auto-générés (ignorés par GIT)
 ├── .gitignore
 └── README.md

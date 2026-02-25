@@ -33,8 +33,8 @@ ${PANIER_BUTTON}             xpath=//span[@class='shopping_cart_badge']
 ${ERROR_MESSAGE}             css=.error-message-container
 ${URL_PRODUITS}              inventory
 ${VITESSE}                   1s
-${FIRSTNAME_FORMULAIRE}   id=first-name
-${LASTNAME_FORMULAIRE}    id=lastname
+${FIRSTNAME_FORMULAIRE}      id=first-name
+${LASTNAME_FORMULAIRE}       id=last-name
 ${ZIP_POSTALECODE_FORMULAIRE}    id=postal-code
 ${CONTINUE_BUTTON}        id=continue
 ${CANCEL_BUTTON}          id=cancel

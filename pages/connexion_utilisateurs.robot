@@ -13,7 +13,7 @@ Fermer le navigateur
 
 Saisir les identifiants
     [Arguments]   ${username}          ${password}
-    Input Text    ${USERNAME-INPUT}    ${username}
+    Input Text    ${USERNAME_INPUT}    ${username}
     Input Text    ${PASSWORD_INPUT}    ${password}
  
 Cliquer sur Login

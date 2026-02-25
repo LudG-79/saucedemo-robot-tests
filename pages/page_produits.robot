@@ -1,24 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource   ../Ressources/variables.robot
+Resource    ../pages/connexion_utilisateurs.robot
 
 *** Keywords ***
-
-Ouvrir SauceDemo
-    Open Browser      ${URL}    ${BROWSER}
-    Set Selenium Speed    ${VITESSE}
-    Maximize Browser Window
-
-Fermer le navigateur
-    Close All Browsers    
-
-Saisir les identifiants
-    [Arguments]    ${username}          ${password}
-    Input Text     ${USERNAME_INPUT}    ${username}
-    Input Text     ${PASSWORD_INPUT}    ${password}
-
-Cliquer sur Login
-    Click Button    ${LOGIN_BUTTON}
 
 Ajouter 1 produit
     Click Button                     ${TEESHIRT_ADDTOCART}
