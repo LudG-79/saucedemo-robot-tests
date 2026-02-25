@@ -1,6 +1,7 @@
 *** Settings ***
 Library          SeleniumLibrary
 Resource         ../pages/connexion_utilisateurs.robot
+Resource         ../Ressources/variables.robot
 Test Teardown    Fermer le navigateur
 
 *** Test Cases ***
