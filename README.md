@@ -106,8 +106,8 @@ python -m robot -d results -e negatif tests/
  🗓️ Feuille de route
 
 - [x] Tests de connexion
-- [ ] Tests du panier d'achat
-- [ ] Tests du processus de paiement
+- [X] Tests du panier d'achat
+- [X] Tests du processus de paiement
 - [ ] Tests pilotés par les données
 - [ ] Intégration continue et déploiement continu (CI/CD) avec GitHub Actions
 
