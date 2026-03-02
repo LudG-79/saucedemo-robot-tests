@@ -16,9 +16,8 @@ Développée dans le cadre d'un apprentissage autodidacte de l'automatisation de
 | Module | Tests | Statut |
 |--------|-------|--------|
 | Connexion | 5 tests (positif + négatif) | ✅ Passing |
-| Achat | En cours | 🔄 WIP |
-| Paiement | En cours | 🔄 WIP |
-
+| Achat | 6 tests (positif + négatif) | ✅ Passing |
+| Paiement | 4 tests (positif + négatif) | ✅ Passing |
 ---
  🛠️ Technologies utilisées
 
